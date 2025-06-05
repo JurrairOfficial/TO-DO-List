@@ -30,13 +30,64 @@ body {
     border-radius: 7px;
 }
 
-.btn{
+
+.maincontainer input[type="button"]{
     height: 40px;
-    width: 45px;
+    width: 70px;
+    padding: 10px 20px;
     background-color: #3ca33d;
     border: none;
     border-radius: 5px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+
 }
+
+.maincontainer input[type="button"]:hover{
+    background-color: #60b160;
+}
+
+ul{
+    width: 85%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    height: 40px;
+    width: 400px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+ul li:hover{
+    background-color: #cbcaca;
+}
+
+ul li {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
