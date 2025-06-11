@@ -51,10 +51,10 @@ body {
 ul{
     width: 85%;
     max-width: 450px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 ul li{
@@ -71,14 +71,47 @@ ul li{
     justify-content: space-between;
     transition: background-color 0.5s;
 }
-ul li:hover{
+ /* ul li:hover{
     background-color: #cbcaca;
-}
+}  */
 
 ul li {
     flex-grow: 1;
     padding: 2px;
 }
+
+ul li p {
+    flex-grow: 1;
+}
+
+.deletbutton {
+    font-size: 16px;
+    background-color: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    color: red;
+}
+
+.editbutton {
+    font-size: 16px;
+    background-color: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    color: green;
+
+}
+
+.deletbutton:hover {
+    background-color: #cbcaca;
+}
+
+.editbutton:hover {
+    background-color: #cbcaca;
+}
+
+
 
 
 
