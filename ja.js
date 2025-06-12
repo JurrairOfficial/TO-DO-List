@@ -20,23 +20,39 @@ const addtodo =  ()=>{
     li.appendChild(p);
     todoList.appendChild(li);
     inputtext.value = "";
-    
+    // Create the deletbutton
     const deletbutton     = document.createElement("deletbutton");
     deletbutton.innerText = "Remove";
     deletbutton.classList.add("deletbutton");
     li.appendChild(deletbutton);
 
+    // Create the edit button
     const editbutton     = document.createElement("editbutton");
     editbutton.innerText = "Edit";
     editbutton.classList.add("editbutton");
     li.appendChild(editbutton);
 
 
+    
+}
 
+const updatetodo = (e)=>{
+    // console.log(e.target.innerHTML);
+    if(e.target.innerHTML === "Remove"){
+        todoList.removeChild(e.target.parentElement);
 
+    }
+    if(e.target.innerHTML === "Edit"){
+        inputtext.value = e.target.previousElementSibling.innerHTML;
 
-
+    }
 
 }
 
+
+
 btn.addEventListener('click', addtodo);
+todoList.addEventListener('click', updatetodo)
+
+
+
